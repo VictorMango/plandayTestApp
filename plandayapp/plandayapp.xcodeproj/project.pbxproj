@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		201B994F271BEF0000426EEA /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B994E271BEF0000426EEA /* NewsArticleViewModel.swift */; };
+		201B9951271BF3D100426EEA /* ListArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B9950271BF3D100426EEA /* ListArticleView.swift */; };
+		201B9953271BFB1F00426EEA /* RowArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B9952271BFB1F00426EEA /* RowArticleView.swift */; };
+		208383A2271DCCF1006938DE /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208383A1271DCCF1006938DE /* NewsAPI.swift */; };
+		208383A4271DCDBB006938DE /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208383A3271DCDBB006938DE /* WebView.swift */; };
+		208383A8271DD9B5006938DE /* SingleArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208383A7271DD9B5006938DE /* SingleArticleView.swift */; };
+		208383AB271DE679006938DE /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208383AA271DE679006938DE /* CornerRadiusStyle.swift */; };
+		2090A24D271AE71A0087F118 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A24C271AE71A0087F118 /* Tests_iOS.swift */; };
+		2090A258271AE71A0087F118 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A257271AE71A0087F118 /* Tests_macOS.swift */; };
+		2090A25A271AE71A0087F118 /* plandayappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A231271AE7170087F118 /* plandayappApp.swift */; };
+		2090A25B271AE71A0087F118 /* plandayappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A231271AE7170087F118 /* plandayappApp.swift */; };
+		2090A25E271AE71A0087F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2090A233271AE7190087F118 /* Assets.xcassets */; };
+		2090A25F271AE71A0087F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2090A233271AE7190087F118 /* Assets.xcassets */; };
+		2090A272271AE7520087F118 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A271271AE7520087F118 /* NewsAPIResponse.swift */; };
+		2090A273271AE7520087F118 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A271271AE7520087F118 /* NewsAPIResponse.swift */; };
+		2090A278271AEC6E0087F118 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A277271AEC6E0087F118 /* ArticleView.swift */; };
+		2090A279271AEC6E0087F118 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A277271AEC6E0087F118 /* ArticleView.swift */; };
+		20DCA5FC271BE47800939319 /* NewsAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA5FB271BE47800939319 /* NewsAPIHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2090A249271AE71A0087F118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2090A22C271AE7170087F118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2090A237271AE71A0087F118;
+			remoteInfo = "plandayapp (iOS)";
+		};
+		2090A254271AE71A0087F118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2090A22C271AE7170087F118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2090A23F271AE71A0087F118;
+			remoteInfo = "plandayapp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201B994E271BEF0000426EEA /* NewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleViewModel.swift; sourceTree = "<group>"; };
+		201B9950271BF3D100426EEA /* ListArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListArticleView.swift; sourceTree = "<group>"; };
+		201B9952271BFB1F00426EEA /* RowArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowArticleView.swift; sourceTree = "<group>"; };
+		208383A1271DCCF1006938DE /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		208383A3271DCDBB006938DE /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		208383A7271DD9B5006938DE /* SingleArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleArticleView.swift; sourceTree = "<group>"; };
+		208383AA271DE679006938DE /* CornerRadiusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyle.swift; sourceTree = "<group>"; };
+		2090A231271AE7170087F118 /* plandayappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plandayappApp.swift; sourceTree = "<group>"; };
+		2090A233271AE7190087F118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2090A238271AE71A0087F118 /* plandayapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plandayapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090A23B271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090A240271AE71A0087F118 /* plandayapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plandayapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090A242271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090A243271AE71A0087F118 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2090A248271AE71A0087F118 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090A24C271AE71A0087F118 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		2090A24E271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090A253271AE71A0087F118 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2090A257271AE71A0087F118 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		2090A259271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2090A271271AE7520087F118 /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
+		2090A277271AEC6E0087F118 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		20DCA5FB271BE47800939319 /* NewsAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2090A235271AE71A0087F118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A23D271AE71A0087F118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A245271AE71A0087F118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A250271AE71A0087F118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201B994D271BEEE200426EEA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				201B994E271BEF0000426EEA /* NewsArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		208383A9271DE65D006938DE /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				208383AA271DE679006938DE /* CornerRadiusStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		2090A22B271AE7170087F118 = {
+			isa = PBXGroup;
+			children = (
+				2090A230271AE7170087F118 /* Shared */,
+				2090A23A271AE71A0087F118 /* iOS */,
+				2090A241271AE71A0087F118 /* macOS */,
+				2090A24B271AE71A0087F118 /* Tests iOS */,
+				2090A256271AE71A0087F118 /* Tests macOS */,
+				2090A239271AE71A0087F118 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2090A230271AE7170087F118 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				201B994D271BEEE200426EEA /* ViewModel */,
+				20DCA5FA271BE46400939319 /* Utillity */,
+				20DCA5F9271BE44D00939319 /* View */,
+				20DCA5F8271BE44500939319 /* Model */,
+				2090A231271AE7170087F118 /* plandayappApp.swift */,
+				2090A233271AE7190087F118 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2090A239271AE71A0087F118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2090A238271AE71A0087F118 /* plandayapp.app */,
+				2090A240271AE71A0087F118 /* plandayapp.app */,
+				2090A248271AE71A0087F118 /* Tests iOS.xctest */,
+				2090A253271AE71A0087F118 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2090A23A271AE71A0087F118 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2090A23B271AE71A0087F118 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2090A241271AE71A0087F118 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2090A242271AE71A0087F118 /* Info.plist */,
+				2090A243271AE71A0087F118 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		2090A24B271AE71A0087F118 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2090A24C271AE71A0087F118 /* Tests_iOS.swift */,
+				2090A24E271AE71A0087F118 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		2090A256271AE71A0087F118 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2090A257271AE71A0087F118 /* Tests_macOS.swift */,
+				2090A259271AE71A0087F118 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		20DCA5F8271BE44500939319 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2090A271271AE7520087F118 /* NewsAPIResponse.swift */,
+				208383A1271DCCF1006938DE /* NewsAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20DCA5F9271BE44D00939319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				208383A9271DE65D006938DE /* ViewModifiers */,
+				2090A277271AEC6E0087F118 /* ArticleView.swift */,
+				201B9950271BF3D100426EEA /* ListArticleView.swift */,
+				201B9952271BFB1F00426EEA /* RowArticleView.swift */,
+				208383A3271DCDBB006938DE /* WebView.swift */,
+				208383A7271DD9B5006938DE /* SingleArticleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20DCA5FA271BE46400939319 /* Utillity */ = {
+			isa = PBXGroup;
+			children = (
+				20DCA5FB271BE47800939319 /* NewsAPIHandler.swift */,
+			);
+			path = Utillity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2090A237271AE71A0087F118 /* plandayapp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090A262271AE71A0087F118 /* Build configuration list for PBXNativeTarget "plandayapp (iOS)" */;
+			buildPhases = (
+				2090A234271AE71A0087F118 /* Sources */,
+				2090A235271AE71A0087F118 /* Frameworks */,
+				2090A236271AE71A0087F118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "plandayapp (iOS)";
+			productName = "plandayapp (iOS)";
+			productReference = 2090A238271AE71A0087F118 /* plandayapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2090A23F271AE71A0087F118 /* plandayapp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090A265271AE71A0087F118 /* Build configuration list for PBXNativeTarget "plandayapp (macOS)" */;
+			buildPhases = (
+				2090A23C271AE71A0087F118 /* Sources */,
+				2090A23D271AE71A0087F118 /* Frameworks */,
+				2090A23E271AE71A0087F118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "plandayapp (macOS)";
+			productName = "plandayapp (macOS)";
+			productReference = 2090A240271AE71A0087F118 /* plandayapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2090A247271AE71A0087F118 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090A268271AE71A0087F118 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				2090A244271AE71A0087F118 /* Sources */,
+				2090A245271AE71A0087F118 /* Frameworks */,
+				2090A246271AE71A0087F118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2090A24A271AE71A0087F118 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 2090A248271AE71A0087F118 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2090A252271AE71A0087F118 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2090A26B271AE71A0087F118 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				2090A24F271AE71A0087F118 /* Sources */,
+				2090A250271AE71A0087F118 /* Frameworks */,
+				2090A251271AE71A0087F118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2090A255271AE71A0087F118 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 2090A253271AE71A0087F118 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2090A22C271AE7170087F118 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2090A237271AE71A0087F118 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2090A23F271AE71A0087F118 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2090A247271AE71A0087F118 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2090A237271AE71A0087F118;
+					};
+					2090A252271AE71A0087F118 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2090A23F271AE71A0087F118;
+					};
+				};
+			};
+			buildConfigurationList = 2090A22F271AE7170087F118 /* Build configuration list for PBXProject "plandayapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2090A22B271AE7170087F118;
+			productRefGroup = 2090A239271AE71A0087F118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2090A237271AE71A0087F118 /* plandayapp (iOS) */,
+				2090A23F271AE71A0087F118 /* plandayapp (macOS) */,
+				2090A247271AE71A0087F118 /* Tests iOS */,
+				2090A252271AE71A0087F118 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2090A236271AE71A0087F118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090A25E271AE71A0087F118 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A23E271AE71A0087F118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090A25F271AE71A0087F118 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A246271AE71A0087F118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A251271AE71A0087F118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2090A234271AE71A0087F118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20DCA5FC271BE47800939319 /* NewsAPIHandler.swift in Sources */,
+				208383A8271DD9B5006938DE /* SingleArticleView.swift in Sources */,
+				201B994F271BEF0000426EEA /* NewsArticleViewModel.swift in Sources */,
+				201B9951271BF3D100426EEA /* ListArticleView.swift in Sources */,
+				2090A272271AE7520087F118 /* NewsAPIResponse.swift in Sources */,
+				2090A25A271AE71A0087F118 /* plandayappApp.swift in Sources */,
+				208383A2271DCCF1006938DE /* NewsAPI.swift in Sources */,
+				208383AB271DE679006938DE /* CornerRadiusStyle.swift in Sources */,
+				201B9953271BFB1F00426EEA /* RowArticleView.swift in Sources */,
+				2090A278271AEC6E0087F118 /* ArticleView.swift in Sources */,
+				208383A4271DCDBB006938DE /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A23C271AE71A0087F118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090A273271AE7520087F118 /* NewsAPIResponse.swift in Sources */,
+				2090A25B271AE71A0087F118 /* plandayappApp.swift in Sources */,
+				2090A279271AEC6E0087F118 /* ArticleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A244271AE71A0087F118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090A24D271AE71A0087F118 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2090A24F271AE71A0087F118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2090A258271AE71A0087F118 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2090A24A271AE71A0087F118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2090A237271AE71A0087F118 /* plandayapp (iOS) */;
+			targetProxy = 2090A249271AE71A0087F118 /* PBXContainerItemProxy */;
+		};
+		2090A255271AE71A0087F118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2090A23F271AE71A0087F118 /* plandayapp (macOS) */;
+			targetProxy = 2090A254271AE71A0087F118 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2090A260271AE71A0087F118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2090A261271AE71A0087F118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2090A263271AE71A0087F118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = victormango.plandayapp;
+				PRODUCT_NAME = plandayapp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2090A264271AE71A0087F118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = victormango.plandayapp;
+				PRODUCT_NAME = plandayapp;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2090A266271AE71A0087F118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = victormango.plandayapp;
+				PRODUCT_NAME = plandayapp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2090A267271AE71A0087F118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = victormango.plandayapp;
+				PRODUCT_NAME = plandayapp;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2090A269271AE71A0087F118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "victormango.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "plandayapp (iOS)";
+			};
+			name = Debug;
+		};
+		2090A26A271AE71A0087F118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "victormango.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "plandayapp (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2090A26C271AE71A0087F118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "victormango.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "plandayapp (macOS)";
+			};
+			name = Debug;
+		};
+		2090A26D271AE71A0087F118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H7FL5446SK;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "victormango.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "plandayapp (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2090A22F271AE7170087F118 /* Build configuration list for PBXProject "plandayapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090A260271AE71A0087F118 /* Debug */,
+				2090A261271AE71A0087F118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2090A262271AE71A0087F118 /* Build configuration list for PBXNativeTarget "plandayapp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090A263271AE71A0087F118 /* Debug */,
+				2090A264271AE71A0087F118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2090A265271AE71A0087F118 /* Build configuration list for PBXNativeTarget "plandayapp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090A266271AE71A0087F118 /* Debug */,
+				2090A267271AE71A0087F118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2090A268271AE71A0087F118 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090A269271AE71A0087F118 /* Debug */,
+				2090A26A271AE71A0087F118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2090A26B271AE71A0087F118 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2090A26C271AE71A0087F118 /* Debug */,
+				2090A26D271AE71A0087F118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2090A22C271AE7170087F118 /* Project object */;
+}
