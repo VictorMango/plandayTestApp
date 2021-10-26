@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'plandayapp (iOS)' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for plandayapp (iOS)
+  pod 'ViewInspector'
+
+end
+
+target 'plandayapp (macOS)' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for plandayapp (macOS)
+
+end

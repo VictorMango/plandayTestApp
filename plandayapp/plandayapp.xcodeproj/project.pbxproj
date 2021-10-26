@@ -15,7 +15,6 @@
 		208383A8271DD9B5006938DE /* SingleArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208383A7271DD9B5006938DE /* SingleArticleView.swift */; };
 		208383AB271DE679006938DE /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208383AA271DE679006938DE /* CornerRadiusStyle.swift */; };
 		2090A24D271AE71A0087F118 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A24C271AE71A0087F118 /* Tests_iOS.swift */; };
-		2090A258271AE71A0087F118 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A257271AE71A0087F118 /* Tests_macOS.swift */; };
 		2090A25A271AE71A0087F118 /* plandayappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A231271AE7170087F118 /* plandayappApp.swift */; };
 		2090A25B271AE71A0087F118 /* plandayappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A231271AE7170087F118 /* plandayappApp.swift */; };
 		2090A25E271AE71A0087F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2090A233271AE7190087F118 /* Assets.xcassets */; };
@@ -25,6 +24,7 @@
 		2090A278271AEC6E0087F118 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A277271AEC6E0087F118 /* ArticleView.swift */; };
 		2090A279271AEC6E0087F118 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090A277271AEC6E0087F118 /* ArticleView.swift */; };
 		20DCA5FC271BE47800939319 /* NewsAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCA5FB271BE47800939319 /* NewsAPIHandler.swift */; };
+		20F2DEDA27284C070083E75F /* NewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2DED927284C070083E75F /* NewsExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,17 +57,14 @@
 		2090A238271AE71A0087F118 /* plandayapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plandayapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2090A23B271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2090A240271AE71A0087F118 /* plandayapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plandayapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2090A242271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2090A243271AE71A0087F118 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		2090A248271AE71A0087F118 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2090A24C271AE71A0087F118 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		2090A24E271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2090A253271AE71A0087F118 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2090A257271AE71A0087F118 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		2090A259271AE71A0087F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2090A271271AE7520087F118 /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 		2090A277271AEC6E0087F118 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		20DCA5FB271BE47800939319 /* NewsAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIHandler.swift; sourceTree = "<group>"; };
+		20F2DED927284C070083E75F /* NewsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +120,7 @@
 			children = (
 				2090A230271AE7170087F118 /* Shared */,
 				2090A23A271AE71A0087F118 /* iOS */,
-				2090A241271AE71A0087F118 /* macOS */,
 				2090A24B271AE71A0087F118 /* Tests iOS */,
-				2090A256271AE71A0087F118 /* Tests macOS */,
 				2090A239271AE71A0087F118 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,15 +157,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		2090A241271AE71A0087F118 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				2090A242271AE71A0087F118 /* Info.plist */,
-				2090A243271AE71A0087F118 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		2090A24B271AE71A0087F118 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,15 +164,6 @@
 				2090A24E271AE71A0087F118 /* Info.plist */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		2090A256271AE71A0087F118 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				2090A257271AE71A0087F118 /* Tests_macOS.swift */,
-				2090A259271AE71A0087F118 /* Info.plist */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		20DCA5F8271BE44500939319 /* Model */ = {
@@ -201,6 +178,7 @@
 		20DCA5F9271BE44D00939319 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20F2DED82727E6C60083E75F /* Templates */,
 				208383A9271DE65D006938DE /* ViewModifiers */,
 				2090A277271AEC6E0087F118 /* ArticleView.swift */,
 				201B9950271BF3D100426EEA /* ListArticleView.swift */,
@@ -215,8 +193,16 @@
 			isa = PBXGroup;
 			children = (
 				20DCA5FB271BE47800939319 /* NewsAPIHandler.swift */,
+				20F2DED927284C070083E75F /* NewsExtensions.swift */,
 			);
 			path = Utillity;
+			sourceTree = "<group>";
+		};
+		20F2DED82727E6C60083E75F /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +285,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					2090A237271AE71A0087F118 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -380,6 +366,7 @@
 				208383A8271DD9B5006938DE /* SingleArticleView.swift in Sources */,
 				201B994F271BEF0000426EEA /* NewsArticleViewModel.swift in Sources */,
 				201B9951271BF3D100426EEA /* ListArticleView.swift in Sources */,
+				20F2DEDA27284C070083E75F /* NewsExtensions.swift in Sources */,
 				2090A272271AE7520087F118 /* NewsAPIResponse.swift in Sources */,
 				2090A25A271AE71A0087F118 /* plandayappApp.swift in Sources */,
 				208383A2271DCCF1006938DE /* NewsAPI.swift in Sources */,
@@ -412,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2090A258271AE71A0087F118 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H7FL5446SK;
@@ -618,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = H7FL5446SK;

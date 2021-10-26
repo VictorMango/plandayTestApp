@@ -21,13 +21,14 @@ class NewsArticleViewModel: ObservableObject {
         }
     }
     
-    func loadArticles() async {
+    func loadArticles(from categories: APIFetchOption?, custom: String?) async {
         state = .empty
         do {
-            let articles = try await newsAPIHandler.fetch(from: .general).articles!
+            let articles = try await newsAPIHandler.fetch(from: categories, custom: custom).articles!
             state = .success(articles)
         } catch {
             state = .failure(error)
         }
     }
+    
 }

@@ -48,6 +48,7 @@ struct SingleArticleView: View {
                     Text("Written by: \(article.authorText)")
                         .font(.subheadline)
                         .foregroundColor(.gray)
+                        .accessibilityIdentifier("single-article-written-by-text")
                     Spacer()
                     Text(article.title ?? "No title")
                         .font(.headline)

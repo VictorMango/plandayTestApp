@@ -9,6 +9,9 @@ import Foundation
 
 enum APIFetchOption: String {
     case general = "Top Headlines"
+    case sport = "Sports"
+    case entertainment = "Entertainment"
+    case technology = "Technology"
 }
 
 struct NewsAPIHandler {
@@ -25,8 +28,10 @@ struct NewsAPIHandler {
         return decoder
     }()
     
-    func fetch(from option: APIFetchOption) async throws -> NewsAPIResponse {
-        let url = generateURL(from: option)
+    func fetch(from option: APIFetchOption?, custom: String?) async throws -> NewsAPIResponse {
+        
+        let url = generateURL(from: option, custom: custom)
+        
         let (data, response) = try await session.data(from: url)
         
         #if DEBUG
@@ -62,11 +67,29 @@ struct NewsAPIHandler {
         NSError(domain: domain, code: code, userInfo: [NSLocalizedDescriptionKey: description])
     }
     
-    private func generateURL(from option: APIFetchOption) -> URL {
+    private func generateURL(from option: APIFetchOption?, custom: String?) -> URL {
         
-        var url = "https://newsapi.org/v2/top-headlines?"
-        url += "country=us"
+        // Generating the URL from option if not nil else custom.
+        var url: String!
+        url = "https://newsapi.org/v2/"
+        
+        if let option = option {
+            url += "top-headlines?country=us"
+            switch option {
+            case .general:
+                break
+            default:
+                url += "&category=\(option.rawValue.lowercased())"
+            }
+            
+        } else {
+            if let custom = custom {
+                url += "everything?qInTitle=\(String(custom.lowercased().removeAllWhitespaces()))"
+            }
+        }
+        
         url += "&apiKey=\(apiKey)"
+
         return URL(string: url)!
         
     }
